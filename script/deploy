@@ -1,7 +1,7 @@
 #!/bin/sh
-#!ssh girish@localhost <<EOF
- cd ~/prodApps/jenkins_node1 <<EOF
- git pull
+#ssh girish@localhost <<EOF
+#cd ~/prodApps/jenkins_node1 <<EOF
+ git pull <<EOF
  npm install — production
  pm2 restart all
  exit
